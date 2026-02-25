@@ -22,7 +22,7 @@ function getBusinessEmailTemplate(data) {
       <!-- Header -->
       <div style="text-align:center; padding: 20px; background: #ffffff; color: #2d3748;">
         <!--[if !mso]><!-->
-        <img src="https://raw.githubusercontent.com/bgbeaconhouse/lbts-thrift-store/1ba0b20578bee0123684923c41c8193d7f308c65/public/images/BHdarklogo1.png"
+        <img src="https://raw.githubusercontent.com/bgbeaconhouse/BH-Catering/refs/heads/main/public/images/catering%20services%20%20(2).png"
              alt="Beacon House Catering Logo"
              width="200"
              style="display:block; width:200px; max-width:100%; height:auto; margin: 0 auto 10px;">
@@ -107,7 +107,7 @@ function getCustomerEmailTemplate(data) {
       <!-- Header -->
       <div style="text-align:center; padding: 20px; background: #ffffff; color: #2d3748;">
         <!--[if !mso]><!-->
-        <img src="https://raw.githubusercontent.com/bgbeaconhouse/lbts-thrift-store/1ba0b20578bee0123684923c41c8193d7f308c65/public/images/BHdarklogo1.png"
+        <img src="https://raw.githubusercontent.com/bgbeaconhouse/BH-Catering/refs/heads/main/public/images/catering%20services%20%20(2).png"
              alt="Beacon House Catering Logo"
              width="200"
              style="display:block; width:200px; max-width:100%; height:auto; margin: 0 auto 10px;">
