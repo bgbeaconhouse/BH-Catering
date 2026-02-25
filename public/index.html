@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beacon House Catering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="images/bannerFinal2.webp">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <header>
+      <div class="logo-section">
+        <img src="images/catering services  (2).png" alt="Beacon House Catering Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+      </div>
+      
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="menu" id='menu'>
+        <a href="services.html">SERVICES</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about.html">ABOUT</a>
+      </nav>
+      
+      <button class="request-btn">REQUEST CATERING</button>
+    </header>
+
+    <div class="hero-content">
+      <h2>Exceptional Catering that Supports<br>Long-Term Recovery</h2>
+      <div class="hero-buttons">
+        <button class="hero-btn primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Request Catering</button>
+        <button class="hero-btn secondary" onclick="window.location.href='services.html'">View Services</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-hero-section">
+    <div class="about-hero-wrapper">
+      <div class="hero-content-center">
+        <p class="hero-text-large"><strong class="highlight-white">Beacon House Culinary</strong> is a social enterprise of The <strong class="highlight-white">Beacon House Association of San Pedro</strong>. Whether you're planning a corporate event, a wedding, or a family gathering, we're eager to provide catering that makes your event truly unforgettable.</p>
+       
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="services-section" id="services">
+    <h2 class="section-title">Services</h2>
+    
+    <div class="services-container">
+      <div class="service-item">
+        <img src="images/Oreo Cheese Cake.jpg" alt="Menus" class="service-image">
+        <div class="service-content">
+          <h3>Services</h3>
+          <p>See everything we offer, from buffets to private events</p>
+          <button class="service-btn" onclick="window.location.href='services.html'">Learn More</button>
+        </div>
+      </div>
+      
+      <div class="service-item reverse">
+        <img src="images/horCheese.jpg" alt="Gallery" class="service-image">
+        <div class="service-content">
+          <h3>Gallery</h3>
+          <p>See a glimpse of our kitchen, team, and service</p>
+          <button class="service-btn" onclick="window.location.href='gallery.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="request-form-section" id="contact">
+    <h2 class="section-title">Request Catering</h2>
+    
+    <div class="form-container">
+      <form class="catering-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization" placeholder="Optional">
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Optional">
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="event-date">Event date</label>
+            <input type="date" id="event-date" name="event-date" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="event-time">Event time</label>
+            <input type="text" id="event-time" name="event-time" placeholder="Optional (e.g., 12:00 PM)">
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Number of guests</label>
+            <input type="number" id="guests" name="guests" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="catering-type">Catering type</label>
+            <select id="catering-type" name="catering-type" required>
+              <option value="">Choose an option...</option>
+              <option value="breakfast-morning-meeting">Breakfast / Morning meeting</option>
+              <option value="boxed-lunches">Boxed lunches</option>
+              <option value="buffet-lunch-dinner">Buffet lunch / dinner</option>
+              <option value="appetizers-reception">Appetizers / Reception</option>
+              <option value="custom">Custom</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="event-location">Event location</label>
+          <input type="text" id="event-location" name="event-location" placeholder="Address or city">
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Dietary needs, budget range, delivery/setup, and anything else that's helpful."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+    <!-- About Us section -->
+  <section class="about-section">
+    <h2 class="section-title">About Us</h2>
+    
+<div class="about-cards-container" style="grid-template-columns: 1fr; max-width: 800px;">
+  <div style="background-color: rgba(255,255,255,0.95); border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+    
+    <div style="width: 100%; height: 300px; overflow: hidden;">
+      <img src="images/bistroPIC.JPG" alt="Beacon House Catering" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+
+    <div style="padding: 2.5rem;">
+
+      <h3 style="font-size: 1.8rem; color: #121c4e; font-family: 'Lato', sans-serif; font-weight: 700; margin-bottom: 1rem;">The Beacon House</h3>
+      <p style="font-size: 1.05rem; color: #444; font-family: 'Roboto', sans-serif; line-height: 1.8; margin-bottom: 2rem;">A 501(c)(3) nonprofit providing long-term residential treatment and a recovery community grounded in character building and spiritual values.</p>
+
+      <h3 style="font-size: 1.8rem; color: #121c4e; font-family: 'Lato', sans-serif; font-weight: 700; margin-bottom: 1rem;">Beacon House Culinary</h3>
+      <p style="font-size: 1.05rem; color: #444; font-family: 'Roboto', sans-serif; line-height: 1.8; margin-bottom: 2rem;">Workforce development through hands-on culinary training and daily service for the community.</p>
+
+      <h3 style="font-size: 1.8rem; color: #121c4e; font-family: 'Lato', sans-serif; font-weight: 700; margin-bottom: 1rem;">Your Event, Done Well</h3>
+      <p style="font-size: 1.05rem; color: #444; font-family: 'Roboto', sans-serif; line-height: 1.8; margin-bottom: 2rem;">Reliable delivery and service options with menus tailored to your headcount, preferences, and dietary needs.</p>
+
+      <button class="about-learn-more-white" onclick="window.location.href='about.html'" style="margin-top: 0;">Learn More</button>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+  
+  </section>
+
+  <script src="script.js"></script>
+  <!-- FOOTER - paste this before </body> on every page -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-logo-section">
+      <img src="images/catering services  (2).png" alt="Beacon House Catering Logo" class="footer-logo" onclick="window.location.href='index.html'">
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">What We Offer</a></li>
+        <li><a href="services.html">Buffet</a></li>
+        <li><a href="services.html">Table Service</a></li>
+        <li><a href="services.html">Boxed Meals</a></li>
+        <li><a href="services.html">Private Events</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Gallery</h4>
+      <ul>
+        <li><a href="gallery.html">Kitchen</a></li>
+        <li><a href="gallery.html">Meals</a></li>
+        <li><a href="gallery.html">Events</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html#contact">Request Catering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.thebeaconhouse.org" target="_blank">TheBeaconHouse.org</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+</footer>
+</body>
+</html>

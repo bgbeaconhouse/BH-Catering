@@ -1,0 +1,361 @@
+/* Services Page Styles */
+.main-header {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem 0 0;
+  background: transparent;
+  z-index: 100;
+}
+
+/* Services Hero Banner */
+.services-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url('images/About5.webp');
+  background-size: cover;
+  background-position: center;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.services-hero-content h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 
+    0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 40%);
+  z-index: 1;
+}
+
+/* Services Introduction Section */
+.services-intro-section {
+  padding: 6rem 2rem 8rem 2rem;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-intro-section .section-title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.services-intro-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 0;
+  border-top: 2px solid rgba(0, 160, 224, 0.5);
+  border-bottom: 2px solid rgba(0, 160, 224, 0.5);
+}
+
+.services-intro-container p {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.services-intro-container .highlight-blue {
+  color: #00a0e0;
+  font-weight: 700;
+}
+
+/* Service Categories Section */
+.service-categories-section {
+  padding: 0 2rem 4rem 2rem;
+  background: transparent;
+}
+
+.service-categories-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.service-categories-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00a0e0, transparent);
+}
+
+.service-categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 350px;
+}
+
+.service-card-image {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  min-height: 350px;
+}
+
+.service-card-content {
+  width: 60%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.service-card-content h3 {
+  font-size: 2.5rem;
+  color: #121c4e;
+  margin: 0 0 1.5rem 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.service-card-content p {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: #444;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/* Bottom Message Section */
+.services-bottom-message {
+  padding: 3rem 2rem 6rem 2rem;
+  text-align: center;
+  background: transparent;
+}
+
+.services-bottom-message p {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.services-bottom-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-bottom-message .about-text-btn.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.services-bottom-message .about-text-btn.secondary-btn:hover {
+  background-color: white;
+  color: #00a0e0;
+}
+
+.about-text-btn {
+  background-color: #00a0e0;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  min-height: 45px;
+}
+
+.about-text-btn:hover {
+  background-color: #08acf2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 993px) {
+  .main-header {
+    padding: 0 !important;
+  }
+  
+.main-header .hamburger {
+  position: fixed !important;
+  right: 10px !important;
+  top: 15px !important;
+  z-index: 1000 !important;
+}
+  
+  .services-hero-banner {
+    height: 350px;
+  }
+  
+  .services-hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .services-intro-container p {
+    font-size: 1.3rem;
+  }
+  
+  .service-categories-title {
+    font-size: 2.5rem;
+  }
+  
+  .service-card {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .service-card-image {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  
+  .service-card-image img {
+    object-position: center center;
+  }
+  
+  .service-card-content {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header .hamburger {
+    right: 15px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .services-hero-banner {
+    height: 300px;
+  }
+  
+  .services-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services-intro-section {
+    padding: 4rem 2rem 6rem 2rem;
+  }
+  
+  .services-intro-section .section-title {
+    font-size: 2rem;
+  }
+  
+  .services-intro-container {
+    padding: 2rem 0;
+  }
+  
+  .services-intro-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .service-categories-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-categories-container {
+    gap: 2rem;
+  }
+  
+  .service-card {
+    height: auto;
+  }
+  
+  .service-card-image {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  
+  .service-card-image img {
+    object-position: center center;
+  }
+  
+  .service-card-content {
+    padding: 1.5rem;
+  }
+  
+  .service-card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card-content p {
+    font-size: 1.1rem;
+  }
+}

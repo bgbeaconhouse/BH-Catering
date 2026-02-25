@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Beacon House Catering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-section">
+      <img src="images/catering services  (2).png" alt="Beacon House Catering Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+    </div>
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="menu" id='menu'>
+      <a href="services.html">SERVICES</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+      
+    <button class="request-btn">REQUEST CATERING</button>
+  </header>
+
+  <!-- Gallery Hero Banner -->
+<section class="gallery-hero-banner">
+  <div class="about-hero-overlay"></div>
+  <div class="gallery-hero-content">
+    <h1>Gallery</h1>
+  </div>
+</section>
+  <p class="gallery-intro-text">Take a look at our kitchen, creations, and past events!</p>
+
+  <!-- Gallery Tabs -->
+  <section class="gallery-section">
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" data-tab="kitchen">Kitchen</button>
+      <button class="gallery-tab" data-tab="meals">Meals</button>
+      <button class="gallery-tab" data-tab="events">Events</button>
+    </div>
+
+    <!-- Kitchen Gallery -->
+    <div class="gallery-content active" id="kitchen">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/bh-kitchen.jpg" alt="Kitchen">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Team Plating.jpg" alt="Team Plating">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Team Prepping.jpg" alt="Team Prepping">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Catering Bread Prep.jpg" alt="Bread Prep">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Focaccia Bread.jpg" alt="Focaccia Bread">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Lemon Tartlet.jpg" alt="Lemon Tartlet">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Corn Bread Cookies.jpg" alt="Corn Bread Cookies">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Salad.jpg" alt="Salad">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Cookie Prep.jpg" alt="Cookie Prep">
+        </div>
+      </div>
+    </div>
+
+    <!-- Meals Gallery -->
+    <div class="gallery-content" id="meals">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/food1.jpg" alt="Personal Catering Dish">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food2.jpg" alt="Pesonal Catering Dish">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food3.jpg" alt="Duck Leg">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food4.jpg" alt="Chicken Roulada">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food5.jpg" alt="Pork Chop">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food6.jpg" alt="Beef Tartar">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food7.jpg" alt="Personal Catering Meal">
+        </div>
+        <div class="gallery-item">
+          <img src="images/food9.jpg" alt="Pecan Bar">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Oreo Cheese Cake.jpg" alt="Oreo Cheese Cake">
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Gallery -->
+    <div class="gallery-content" id="events">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/43.jpeg" alt="Table Display">
+        </div>
+        <div class="gallery-item">
+          <img src="images/42-scaled.jpeg" alt="Table Display">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Picnic Catering Event.jpg" alt="Picnic Catering Event">
+        </div>
+        <div class="gallery-item">
+          <img src="images/16.jpeg" alt="Picnic Catering Event">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Library Catering.jpg" alt="Library Catering Event">
+        </div>
+        <div class="gallery-item">
+          <img src="images/1.jpeg" alt="Library Catering Event">
+        </div>
+        <div class="gallery-item">
+          <img src="images/2.jpeg" alt="Library Catering Event">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Wedding Dessert Table.jpg" alt="Wedding Dessert Table">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Table Image.jpg" alt="Table Display">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Message -->
+  <section class="gallery-bottom-message">
+    <p>To book an event now, click below, or to learn more about us and our mission, view about us.</p>
+    <div class="gallery-bottom-buttons">
+      <button class="about-text-btn" onclick="window.location.href='index.html#contact'">Request Catering</button>
+      <button class="about-text-btn secondary-btn" onclick="window.location.href='about.html'">About Us</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

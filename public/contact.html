@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Beacon House Catering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-section">
+      <img src="images/catering services  (2).png" alt="Beacon House Catering Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+    </div>
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="menu" id='menu'>
+      <a href="services.html">SERVICES</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+      
+    <button class="request-btn">REQUEST CATERING</button>
+  </header>
+
+  <!-- Contact Hero Banner -->
+  <section class="contact-hero-banner">
+    <div class="about-hero-overlay"></div>
+  </section>
+
+  <h2 class="section-title">Contact Us</h2>
+
+  <p class="contact-intro-text">Have questions before you fill out our catering request form? Reach out directly below.</p>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        </div>
+        
+        <div class="form-group">
+          <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+        
+        <button type="submit" class="contact-submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

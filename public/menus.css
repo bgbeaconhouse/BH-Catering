@@ -1,0 +1,280 @@
+/* Menus Page Styles */
+.main-header {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem 0 0;
+  background: transparent;
+  z-index: 100;
+}
+
+/* Menus Hero Banner */
+.menus-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url('images/bistroFinal3.webp');
+  background-size: cover;
+  background-position: center;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menus-hero-banner + .section-title {
+  margin-top: 4rem;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 40%);
+  z-index: 1;
+}
+
+/* Menus Subtitle */
+.menus-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: -2rem auto 5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+/* Menus Instruction */
+.menus-instruction {
+  text-align: center;
+  font-size: 2rem;
+  color: #00a0e0;
+  margin: -1.5rem auto 4rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  max-width: 800px;
+  padding: 0 2rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* Menu Cards Section */
+.menus-cards-section {
+  padding: 0 2rem 4rem 2rem;
+  background: transparent;
+}
+
+.menus-cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.menu-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-card::after {
+  content: "Click to select →";
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-size: 0.9rem;
+  color: #00a0e0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 160, 224, 0.5);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.menu-card:hover::after {
+  opacity: 1;
+}
+
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.menu-card-header h3 {
+  font-size: 1.5rem;
+  color: #121c4e;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu-price {
+  font-size: 0.9rem;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.menu-card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-card-content li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card-content li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00a0e0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Bottom Message Section */
+.menus-bottom-message {
+  padding: 3rem 2rem 6rem 2rem;
+  text-align: center;
+  background: transparent;
+}
+
+.menus-bottom-message p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menus-contact-note {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.menus-buttons-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.menus-bottom-message .about-text-btn {
+  background-color: #00a0e0;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  min-height: 45px;
+}
+
+.menus-bottom-message .about-text-btn:hover {
+  background-color: #08acf2;
+}
+
+.menus-bottom-message .about-text-btn.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.menus-bottom-message .about-text-btn.secondary-btn:hover {
+  background-color: white;
+  color: #00a0e0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 993px) {
+  .menus-hero-banner {
+    height: 350px;
+  }
+  
+  .menus-cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menus-hero-banner {
+    height: 300px;
+  }
+  
+  .menus-subtitle {
+    font-size: 1rem;
+    margin: -1rem auto 1rem;
+  }
+  
+  .menus-instruction {
+    font-size: 1.4rem;
+    margin: -1rem auto 3rem;
+  }
+  
+  .menu-card {
+    padding: 1.5rem;
+  }
+  
+  .menu-card::after {
+    display: none;
+  }
+  
+  .menu-card-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .menu-card-content li {
+    font-size: 0.95rem;
+  }
+  
+  .menus-buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menus - Beacon House Catering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menus.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-section">
+      <img src="images/catering services  (2).png" alt="Beacon House Catering Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+    </div>
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="menu" id='menu'>
+      <a href="services.html">SERVICES</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+      
+    <button class="request-btn">REQUEST CATERING</button>
+  </header>
+
+  <!-- Menus Hero Banner -->
+  <section class="menus-hero-banner">
+    <div class="about-hero-overlay"></div>
+  </section>
+
+  <h2 class="section-title">Menus</h2>
+  
+  <p class="menus-instruction">Click on any menu below to get started with your catering request.</p>
+
+  <!-- Menu Cards Section -->
+  <section class="menus-cards-section">
+    <div class="menus-cards-container">
+      
+      <!-- Breakfast / Morning Meeting -->
+      <div class="menu-card" onclick="window.location.href='index.html?type=breakfast-morning-meeting#contact'" style="cursor: pointer;">
+        <div class="menu-card-header">
+          <h3>Breakfast / Morning Meeting</h3>
+          <span class="menu-price">10–150+</span>
+        </div>
+        <div class="menu-card-content">
+          <ul>
+            <li>Pastries + fruit platters</li>
+            <li>Breakfast burritos or sandwiches</li>
+            <li>Yogurt, granola, and coffee service (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Boxed Lunches -->
+      <div class="menu-card" onclick="window.location.href='index.html?type=boxed-lunches#contact'" style="cursor: pointer;">
+        <div class="menu-card-header">
+          <h3>Boxed Lunches</h3>
+          <span class="menu-price">Fast + clean</span>
+        </div>
+        <div class="menu-card-content">
+          <ul>
+            <li>Sandwich or wrap + side + dessert</li>
+            <li>Vegetarian / vegan / gluten-free options available</li>
+            <li>Great for trainings, schools, and teams</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Buffet Lunch / Dinner -->
+      <div class="menu-card" onclick="window.location.href='index.html?type=buffet-lunch-dinner#contact'" style="cursor: pointer;">
+        <div class="menu-card-header">
+          <h3>Buffet Lunch / Dinner</h3>
+          <span class="menu-price">Most popular</span>
+        </div>
+        <div class="menu-card-content">
+          <ul>
+            <li>Protein + seasonal sides + salad</li>
+            <li>Family-style or buffet setup</li>
+            <li>Setup, staffing, and rentals available upon request</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Appetizers + Reception -->
+      <div class="menu-card" onclick="window.location.href='index.html?type=appetizers-reception#contact'" style="cursor: pointer;">
+        <div class="menu-card-header">
+          <h3>Appetizers + Reception</h3>
+          <span class="menu-price">Weddings • mixers</span>
+        </div>
+        <div class="menu-card-content">
+          <ul>
+            <li>Passed bites or platter stations</li>
+            <li>Light desserts</li>
+            <li>Non-alcoholic beverage service available</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Custom -->
+      <div class="menu-card" onclick="window.location.href='index.html?type=custom#contact'" style="cursor: pointer;">
+        <div class="menu-card-header">
+          <h3>Custom</h3>
+          <span class="menu-price">Your vision</span>
+        </div>
+        <div class="menu-card-content">
+          <ul>
+            <li>Fully customized menu for your event</li>
+            <li>Work with our team to create something unique</li>
+            <li>Perfect for special occasions and specific dietary needs</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bottom Message -->
+  <section class="menus-bottom-message">
+    <p class="menus-contact-note">If you'd like to reach us directly for any specific questions, you may also reach us through our contact page</p>
+    <button class="about-text-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
