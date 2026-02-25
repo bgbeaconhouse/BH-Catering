@@ -85,5 +85,5 @@ app.post('/api/catering-request', async (req, res) => {
 // Start server
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`Also accessible at http://192.168.1.183:${PORT}`);
+  console.log(`Also accessible at http://192.168.99.130:${PORT}`);
 });
