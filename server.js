@@ -69,10 +69,8 @@ app.post('/api/catering-request', async (req, res) => {
     };
 
     // Send both emails
-    await Promise.all([
-      transporter.sendMail(businessEmailOptions),
-      transporter.sendMail(customerEmailOptions)
-    ]);
+  await transporter.sendMail(businessEmailOptions);
+await transporter.sendMail(customerEmailOptions);
 
     res.json({ success: true, message: 'Catering request submitted successfully!' });
   } catch (error) {
