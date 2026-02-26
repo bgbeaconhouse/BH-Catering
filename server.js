@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const { getBusinessEmailTemplate, getCustomerEmailTemplate } = require('./email-templates');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
@@ -51,22 +51,22 @@ app.post('/api/catering-request', async (req, res) => {
       .join(' ');
 
     // Email to business (notification of new request)
- const businessEmailOptions = {
-  from: 'catering@thebeaconhouse.org',
-  to: 'catering@thebeaconhouse.org',
-  subject: `New Catering Request from ${name}`,
-  html: getBusinessEmailTemplate(req.body),
-  replyTo: email
-};
+    const businessEmailOptions = {
+      from: 'catering@thebeaconhouse.org',
+      to: 'catering@thebeaconhouse.org',
+      subject: `New Catering Request from ${name}`,
+      html: getBusinessEmailTemplate(req.body),
+      replyTo: email
+    };
 
     // Confirmation email to customer
- const customerEmailOptions = {
-  from: 'catering@thebeaconhouse.org',
-  to: email,
-  subject: 'Thank You for Your Catering Request - Beacon House Catering',
-  html: getCustomerEmailTemplate(req.body),
-  replyTo: 'catering@thebeaconhouse.org'
-};
+    const customerEmailOptions = {
+      from: 'catering@thebeaconhouse.org',
+      to: email,
+      subject: 'Thank You for Your Catering Request - Beacon House Catering',
+      html: getCustomerEmailTemplate(req.body),
+      replyTo: 'catering@thebeaconhouse.org'
+    };
 
     // Send both emails
     await Promise.all([
@@ -86,6 +86,5 @@ app.post('/api/catering-request', async (req, res) => {
 
 // Start server
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`Also accessible at http://192.168.1.183:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
