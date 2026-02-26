@@ -28,7 +28,7 @@ const menu = document.getElementById('menu');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
-  document.body.classList.toggle('menu-open');  // ADD THIS LINE
+  document.body.classList.toggle('menu-open');
 });
 
 // Close menu when clicking a link
@@ -131,15 +131,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const result = await response.json();
         
         if (result.success) {
-          // Show success message
-          alert('Thank you! Your catering request has been submitted successfully. We\'ll get back to you soon!');
-          cateringForm.reset();
+          const formContainer = document.querySelector('.form-container');
+          formContainer.innerHTML = `
+            <div style="text-align:center; padding: 3rem 2rem;">
+              <h3 style="font-size:2rem; color:#121c4e; font-family:'Lato',sans-serif; font-weight:700; margin-bottom:1rem;">Request Submitted!</h3>
+              <p style="font-size:1.1rem; color:#444; font-family:'Roboto',sans-serif; line-height:1.8; margin-bottom:2rem;">Thank you for reaching out. We'll be in touch shortly to discuss the details of your event.</p>
+            </div>
+          `;
+           formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
-          alert('Sorry, there was an error submitting your request. Please try again or contact us directly at beaconhousecatering@gmail.com');
+          const formContainer = document.querySelector('.form-container');
+          formContainer.insertAdjacentHTML('afterbegin', `
+            <div style="background-color:#ffe0e0; border:1px solid #ff4444; border-radius:8px; padding:1rem 1.5rem; margin-bottom:1.5rem; text-align:center;">
+              <p style="color:#cc0000; font-family:'Roboto',sans-serif; margin:0;">Sorry, there was an error submitting your request. Please try again or contact us directly at catering@thebeaconhouse.org</p>
+            </div>
+          `);
         }
       } catch (error) {
         console.error('Form submission error:', error);
-        alert('Sorry, there was an error submitting your request. Please try again or contact us directly at beaconhousecatering@gmail.com');
+        const formContainer = document.querySelector('.form-container');
+        formContainer.insertAdjacentHTML('afterbegin', `
+          <div style="background-color:#ffe0e0; border:1px solid #ff4444; border-radius:8px; padding:1rem 1.5rem; margin-bottom:1.5rem; text-align:center;">
+            <p style="color:#cc0000; font-family:'Roboto',sans-serif; margin:0;">Sorry, there was an error submitting your request. Please try again or contact us directly at catering@thebeaconhouse.org</p>
+          </div>
+        `);
       } finally {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;

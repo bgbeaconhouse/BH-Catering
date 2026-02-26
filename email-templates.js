@@ -27,18 +27,19 @@ function getBusinessEmailTemplate(data) {
       <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; width:100%; background-color:#121c4e; font-family: Arial, sans-serif;">
 
         <!-- Logo -->
-        <tr>
-          <td align="center" style="padding: 20px 30px 10px 30px;">
-            <img src="https://raw.githubusercontent.com/bgbeaconhouse/BH-Catering/refs/heads/main/public/images/catering%20services%20%20(2).png"
-                 alt="Beacon House Catering Logo"
-                 width="200"
-                 style="display:block; width:200px; height:auto;">
-          </td>
-        </tr>
+     <tr>
+  <td align="center" style="padding: 20px 30px 10px 30px;">
+    <img src="https://raw.githubusercontent.com/bgbeaconhouse/BH-Catering/refs/heads/main/public/images/catering%20services%20%20(2).png"
+         alt="Beacon House Catering Logo"
+         width="200"
+         style="display:block; width:200px; height:auto;">
+    <p style="color:#00a0e0; font-size:20px; font-weight:bold; font-family:Arial, sans-serif; margin:8px 0 0 0; letter-spacing:1px;">Beacon House Catering</p>
+  </td>
+</tr>
 
         <!-- Intro Text -->
         <tr>
-          <td style="padding: 10px 30px 0 30px;">
+          <td style="padding: 30px 30px 0 30px;">
             <p style="color:#ffffff; font-size:16px; line-height:1.6; margin:0;">
               You have received a new catering request. Details are below.
             </p>
@@ -167,18 +168,19 @@ function getCustomerEmailTemplate(data) {
       <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; width:100%; background-color:#121c4e; font-family: Arial, sans-serif;">
 
         <!-- Logo -->
-        <tr>
-          <td align="center" style="padding: 20px 30px 10px 30px;">
-            <img src="https://raw.githubusercontent.com/bgbeaconhouse/BH-Catering/refs/heads/main/public/images/catering%20services%20%20(2).png"
-                 alt="Beacon House Catering Logo"
-                 width="200"
-                 style="display:block; width:200px; height:auto;">
-          </td>
-        </tr>
+  <tr>
+  <td align="center" style="padding: 20px 30px 10px 30px;">
+    <img src="https://raw.githubusercontent.com/bgbeaconhouse/BH-Catering/refs/heads/main/public/images/catering%20services%20%20(2).png"
+         alt="Beacon House Catering Logo"
+         width="200"
+         style="display:block; width:200px; height:auto;">
+    <p style="color:#00a0e0; font-size:20px; font-weight:bold; font-family:Arial, sans-serif; margin:8px 0 0 0; letter-spacing:1px;">Beacon House Catering</p>
+  </td>
+</tr>
 
         <!-- Greeting -->
         <tr>
-          <td style="padding: 10px 30px 0 30px;">
+          <td style="padding: 30px 30px 0 30px;">
             <p style="color:#ffffff; font-size:16px; line-height:1.6; margin:0 0 15px 0;">Dear ${name},</p>
             <p style="color:#ffffff; font-size:16px; line-height:1.6; margin:0;">
               Thank you for reaching out to Beacon House Catering! We've received your request and will be in touch shortly to discuss the details and provide a customized quote.
