@@ -39,8 +39,30 @@ document.querySelectorAll('.menu a').forEach(link => {
   });
 });
 
+// Phone number auto-formatting
+function formatPhoneNumber(input) {
+  let digits = input.value.replace(/\D/g, '');
+  if (digits.length > 10) digits = digits.slice(0, 10);
+  if (digits.length === 0) {
+    input.value = '';
+  } else if (digits.length <= 3) {
+    input.value = `(${digits}`;
+  } else if (digits.length <= 6) {
+    input.value = `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  } else {
+    input.value = `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  }
+}
+
 // Handle dropdown toggle on mobile
 document.addEventListener('DOMContentLoaded', () => {
+  // Attach phone formatting to all phone inputs on the page
+  document.querySelectorAll('input[type="tel"]').forEach(phoneInput => {
+    phoneInput.addEventListener('input', () => formatPhoneNumber(phoneInput));
+    phoneInput.setAttribute('placeholder', '(555) 555-5555');
+    phoneInput.setAttribute('maxlength', '14');
+  });
+
   const dropdownToggle = document.querySelector('.dropdown-toggle');
   const dropdown = document.querySelector('.dropdown');
   

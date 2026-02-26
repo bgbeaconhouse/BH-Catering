@@ -128,7 +128,7 @@ function getBusinessEmailTemplate(data) {
           <td align="center" style="padding: 20px 30px; background-color:#0d1538;">
             <p style="color:#aaaaaa; font-size:12px; margin:0;">Beacon House Culinary</p>
             <p style="color:#aaaaaa; font-size:12px; margin:5px 0;">A social enterprise of The Beacon House Association of San Pedro</p>
-            <p style="color:#aaaaaa; font-size:12px; margin:5px 0;">beaconhousecatering@gmail.com</p>
+            
           </td>
         </tr>
 
@@ -230,15 +230,7 @@ function getCustomerEmailTemplate(data) {
           </td>
         </tr>
 
-        <!-- Contact note -->
-        <tr>
-          <td style="padding: 0 30px 20px 30px;">
-            <p style="color:#cccccc; font-size:14px; line-height:1.6; margin:0;">
-              If you have any questions in the meantime, feel free to reply to this email or contact us directly at
-              <strong style="color:#ffffff;">beaconhousecatering@gmail.com</strong>.
-            </p>
-          </td>
-        </tr>
+ 
 
         <!-- Sign-off -->
         <tr>
@@ -255,7 +247,7 @@ function getCustomerEmailTemplate(data) {
           <td align="center" style="padding: 20px 30px; background-color:#0d1538;">
             <p style="color:#aaaaaa; font-size:12px; margin:0;">Beacon House Culinary</p>
             <p style="color:#aaaaaa; font-size:12px; margin:5px 0;">A social enterprise of The Beacon House Association of San Pedro</p>
-            <p style="color:#aaaaaa; font-size:12px; margin:5px 0;">beaconhousecatering@gmail.com</p>
+           
           </td>
         </tr>
 

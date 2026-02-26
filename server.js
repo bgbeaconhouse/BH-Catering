@@ -14,10 +14,12 @@ app.use(express.static('public'));
 
 // Email configuration using Gmail
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'outbound-us1.ppe-hosted.com',
+  port: 587,
+  secure: false,
   auth: {
-    user: 'beaconhousecatering@gmail.com',
-    pass: process.env.EMAIL_APP_PASSWORD
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD
   }
 });
 
@@ -50,8 +52,8 @@ app.post('/api/catering-request', async (req, res) => {
 
     // Email to business (notification of new request)
  const businessEmailOptions = {
-  from: 'beaconhousecatering@gmail.com',
-  to: 'beaconhousecatering@gmail.com',
+  from: 'catering@thebeaconhouse.org',
+  to: 'catering@thebeaconhouse.org',
   subject: `New Catering Request from ${name}`,
   html: getBusinessEmailTemplate(req.body),
   replyTo: email
@@ -59,11 +61,11 @@ app.post('/api/catering-request', async (req, res) => {
 
     // Confirmation email to customer
  const customerEmailOptions = {
-  from: 'beaconhousecatering@gmail.com',
+  from: 'catering@thebeaconhouse.org',
   to: email,
   subject: 'Thank You for Your Catering Request - Beacon House Catering',
   html: getCustomerEmailTemplate(req.body),
-  replyTo: 'beaconhousecatering@gmail.com'
+  replyTo: 'catering@thebeaconhouse.org'
 };
 
     // Send both emails
