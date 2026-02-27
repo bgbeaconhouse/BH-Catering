@@ -82,57 +82,35 @@
   margin: 0 auto;
 }
 
-/* Gallery Tabs */
-.gallery-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
+/* Gallery Category */
+.gallery-category {
+  margin-bottom: 5rem;
 }
 
-.gallery-tab {
-  background-color: transparent;
+.gallery-category:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-category-title {
+  font-size: 2.5rem;
   color: #ffffff;
-  border: 2px solid #00a0e0;
-  padding: 12px 40px;
-  font-size: 1.1rem;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s;
-  min-width: 150px;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
 }
 
-.gallery-tab:hover {
-  background-color: rgba(0, 160, 224, 0.2);
-}
-
-.gallery-tab.active {
-  background-color: #00a0e0;
-  color: white;
-}
-
-/* Gallery Content */
-.gallery-content {
-  display: none;
-  animation: fadeIn 0.5s ease-in;
-}
-
-.gallery-content.active {
-  display: block;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.gallery-category-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00a0e0, transparent);
 }
 
 /* Gallery Grid */
@@ -179,18 +157,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
-  .gallery-tabs {
-    gap: 1rem;
-  }
-  
-  .gallery-tab {
-    padding: 10px 30px;
-    font-size: 1rem;
-    min-width: 120px;
-  }
-   .gallery-hero-content h1 {
-    font-size: 3.5rem;  /* matches about and services */
+
+  .gallery-hero-content h1 {
+    font-size: 3.5rem;
   }
 }
 
@@ -199,14 +168,14 @@
     height: 300px;
   }
   
- .gallery-intro-text {
-  margin: 2rem 1.5rem 3rem;
-  font-size: 1.4rem;
-  padding: 1.5rem;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
+  .gallery-intro-text {
+    margin: 2rem 1.5rem 3rem;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
 
   .gallery-grid {
     grid-template-columns: 1fr;
@@ -216,10 +185,18 @@
   .gallery-section {
     padding: 0 1rem 4rem 1rem;
   }
-    .gallery-hero-content h1 {
-    font-size: 2.5rem;  /* matches about and services */
+
+  .gallery-hero-content h1 {
+    font-size: 2.5rem;
   }
 
+  .gallery-category-title {
+    font-size: 2rem;
+  }
+
+  .gallery-category {
+    margin-bottom: 3.5rem;
+  }
 }
 
 /* Gallery Bottom Message Section */
@@ -275,25 +252,6 @@
 .gallery-bottom-message .about-text-btn.secondary-btn:hover {
   background-color: white;
   color: #00a0e0;
-}
-
-.gallery-bottom-btn {
-  background-color: #00a0e0;
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  font-size: 1.1rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s;
-  backdrop-filter: blur(10px);
-  min-height: 45px;
-}
-
-.gallery-bottom-btn:hover {
-  background-color: #08acf2;
 }
 
 /* Lightbox Styles */
@@ -388,7 +346,6 @@
   padding: 10px 20px;
   border-radius: 20px;
 }
-
 
 @media (max-width: 768px) {
   .lightbox-prev,
