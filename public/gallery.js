@@ -50,10 +50,10 @@ function initLightbox() {
 
   // Add click event to all gallery items
   document.querySelectorAll('.gallery-item').forEach((item, index) => {
-    item.addEventListener('click', () => {
-      // Get all images in the current active gallery
-      const activeGallery = document.querySelector('.gallery-content.active');
-      currentImages = Array.from(activeGallery.querySelectorAll('.gallery-item img'));
+   item.addEventListener('click', () => {
+  // Get all images in the same category section
+  const activeGallery = item.closest('.gallery-category');
+  currentImages = Array.from(activeGallery.querySelectorAll('.gallery-item img'));
       
       // Find the index of clicked image
       const clickedImg = item.querySelector('img');
