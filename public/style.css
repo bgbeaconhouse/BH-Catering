@@ -680,8 +680,13 @@ header {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.hero-title-mobile {
+  display: none;
+}
 
-
+.mobile-break {
+  display: none;
+}
 
 /* Mobile Responsive */
 @media (max-width: 993px) {
@@ -805,6 +810,10 @@ header, .main-header {
 
   }
   
+.mobile-break {
+  display: inline;
+}
+
 .about-cards-container {
   padding: 0 0.5rem;
   gap: 1.5rem;
@@ -834,7 +843,7 @@ header:not(.main-header) {
 
 
 .hero-section {
-  background-image: url('images/MobileRevision.png');
+  background-image: url('images/1.webp');
   background-size: cover;
   background-position: center top;
   overflow: hidden;
@@ -865,14 +874,16 @@ header:not(.main-header) {
   }
 
 .hero-content {
-  margin-left: auto;
+  margin-left: 0;
   padding: 1rem;
   padding-top: 13rem;
+  
 }
 
   .hero-content h2 {
-    font-size: 2rem;
-    margin-top: -12rem;
+    font-size: 1.5rem;
+    margin-top: -14rem;
+      text-align: left;
   }
 
   .hero-buttons {
@@ -896,6 +907,7 @@ header:not(.main-header) {
     font-size: 1.5rem;
     line-height: 1.6;
   }
+
 }
 
 
