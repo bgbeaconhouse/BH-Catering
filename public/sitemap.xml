@@ -5,23 +5,23 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://beaconhousecatering.org/services.html</loc>
+    <loc>https://beaconhousecatering.org/services</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beaconhousecatering.org/gallery.html</loc>
+    <loc>https://beaconhousecatering.org/gallery</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beaconhousecatering.org/about.html</loc>
+    <loc>https://beaconhousecatering.org/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beaconhousecatering.org/menus.html</loc>
+    <loc>https://beaconhousecatering.org/menus</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beaconhousecatering.org/contact.html</loc>
+    <loc>https://beaconhousecatering.org/contact</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
