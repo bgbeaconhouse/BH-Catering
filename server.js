@@ -14,7 +14,7 @@ app.set('trust proxy', 1);
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static('public', { extensions: ['html'] }));
 
 // Rate limiter: 5 submissions per 15 minutes per IP
 const cateringLimiter = rateLimit({
