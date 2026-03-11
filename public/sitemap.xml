@@ -17,10 +17,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beaconhousecatering.org/menus</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://beaconhousecatering.org/contact</loc>
     <priority>0.6</priority>
   </url>
