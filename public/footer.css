@@ -24,18 +24,19 @@
 }
 
 .footer-phone {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 0.95rem;
-  margin-top: 2.5rem;
+  color: #00a0e0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1rem;
   transition: color 0.3s;
   text-decoration: none;
   display: block;
+  letter-spacing: 0.5px;
 }
 
 .footer-phone:hover {
-  color: #00a0e0;
+  color: #ffffff;
 }
 
 .footer-logo {
