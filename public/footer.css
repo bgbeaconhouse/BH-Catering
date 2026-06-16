@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: -8rem;
-  gap: 0.5rem;
+  justify-content: flex-start;
 }
 
 .footer-phone {
@@ -51,6 +51,13 @@
 
 .footer-logo:hover {
   filter: brightness(1.1);
+}
+
+.footer-logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .footer-col h4 {
