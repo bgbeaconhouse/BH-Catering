@@ -147,6 +147,15 @@
     justify-content: center;
   }
 
+.footer-logo-group {
+    align-items: center;
+  }
+
+  .footer-phone {
+    text-align: center;
+    width: auto;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 0.5rem;
