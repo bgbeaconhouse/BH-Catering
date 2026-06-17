@@ -66,4 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowRight' && currentIndex < currentImages.length - 1) { currentIndex++; updateImage(); }
     if (e.key === 'ArrowLeft' && currentIndex > 0) { currentIndex--; updateImage(); }
   });
+  window.toggleTestimonial = function(id) {
+  const dropdown = document.getElementById(id);
+  dropdown.classList.toggle('open');
+  const btn = dropdown.previousElementSibling;
+  btn.textContent = dropdown.classList.contains('open') ? 'Hide Testimonial' : 'View Testimonial';
+};
 });
