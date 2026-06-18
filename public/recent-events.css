@@ -74,7 +74,6 @@
   gap: 2rem;
   align-items: stretch;
 }
-
 /* Info Card */
 .event-info-card {
   background-color: rgba(255, 255, 255, 0.95);
@@ -84,7 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .event-info-card p {
@@ -116,7 +115,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  height: 220px;
+  min-height: 220px;
+  max-height: 320px;
   position: relative;
   cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s;
